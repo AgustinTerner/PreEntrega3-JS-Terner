@@ -1,0 +1,119 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+.body_login {
+  width: 100%;
+  overflow-y: scroll; }
+  .body_login h2 {
+    text-align: center;
+    color: darkviolet; }
+
+.body_productos {
+  width: 100%; }
+
+.body_h1 {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: darkviolet;
+  font-size: 50px; }
+  .body_h1 .body_span_h1 {
+    background-color: darkviolet;
+    color: black;
+    border-radius: 10px;
+    text-align: center; }
+
+.bodyBuscador {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .bodyBuscador #inputBuscarProducto {
+    width: 500px;
+    height: 50px;
+    border: 2px solid;
+    border-color: black;
+    font-size: 25px; }
+  .bodyBuscador #inputBuscarProducto::placeholder {
+    font-size: 25px;
+    color: black; }
+  .bodyBuscador #botonBuscarProducto {
+    width: 100px;
+    height: 50px;
+    margin-left: 10px;
+    border: 2px solid;
+    background-color: lightgray;
+    color: black;
+    font-size: 20px; }
+  .bodyBuscador #botonBuscarProducto:hover {
+    background-color: darkgray;
+    color: white;
+    border-color: black; }
+  .bodyBuscador #botonBuscarProducto:active {
+    background-color: gray;
+    color: white;
+    border-color: black; }
+  .bodyBuscador #botonCerrarSesion {
+    width: 100px;
+    height: 50px;
+    margin-left: 10px; }
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .formulario .contenedor_usuario,
+  .formulario .contenedor_email,
+  .formulario .contenedor_password {
+    margin: 20px 0;
+    display: flex; }
+    .formulario .contenedor_usuario #usuario,
+    .formulario .contenedor_usuario #email,
+    .formulario .contenedor_usuario #contraseña,
+    .formulario .contenedor_email #usuario,
+    .formulario .contenedor_email #email,
+    .formulario .contenedor_email #contraseña,
+    .formulario .contenedor_password #usuario,
+    .formulario .contenedor_password #email,
+    .formulario .contenedor_password #contraseña {
+      width: 300px;
+      height: 30px;
+      font-size: 20px; }
+  .formulario .contenedor_botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .formulario .contenedor_botones #botonReset,
+    .formulario .contenedor_botones #botonEnviar {
+      width: 145px;
+      height: 30px;
+      font-size: 15px; }
+
+#containerPrincipal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 50px; }
+  #containerPrincipal .producto {
+    width: 300px;
+    height: auto;
+    margin: auto;
+    border: 2px solid;
+    border-color: gray; }
+    #containerPrincipal .producto .producto_item {
+      text-align: center;
+      display: grid;
+      grid-template-rows: 50px 50px 200px 50px;
+      align-items: center; }
+      #containerPrincipal .producto .producto_item h2 {
+        color: gray; }
+      #containerPrincipal .producto .producto_item h3 {
+        color: darkgray; }
+      #containerPrincipal .producto .producto_item img {
+        margin: auto;
+        width: 200px;
+        height: 200px; }

@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body_login{
+    width: 100%;
+    overflow-y: scroll;
+    h2{
+        text-align: center;
+        color: darkviolet;
+    }
+}
+
+.body_productos{
+    width: 100%;
+}
+
+.body_h1 {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: darkviolet;
+    font-size: 50px;
+
+    .body_span_h1 {
+        background-color: darkviolet;
+        color: black;
+        border-radius: 10px;
+        text-align: center;
+    }
+}
+
+.bodyBuscador {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    #inputBuscarProducto {
+        width: 500px;
+        height: 50px;
+        border: 2px solid;
+        border-color: black;
+        font-size: 25px;
+    }
+
+    #inputBuscarProducto::placeholder {
+        font-size: 25px;
+        color: black;
+    }
+
+    #botonBuscarProducto {
+        width: 100px;
+        height: 50px;
+        margin-left: 10px;
+        border: 2px solid;
+        background-color: lightgray;
+        color: black;
+        font-size: 20px;
+    }
+
+    #botonBuscarProducto:hover {
+        background-color: darkgray;
+        color: white;
+        border-color: black;
+    }
+
+    #botonBuscarProducto:active {
+        background-color: gray;
+        color: white;
+        border-color: black;
+    }
+    #botonCerrarSesion{
+        width: 100px;
+        height: 50px;
+        margin-left: 10px;
+    }
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contenedor_usuario,
+    .contenedor_email,
+    .contenedor_password {
+        margin: 20px 0;
+        display: flex;
+
+        #usuario,
+        #email,
+        #contraseña {
+            width: 300px;
+            height: 30px;
+            font-size: 20px;
+        }
+    }
+    .contenedor_botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        #botonReset, 
+        #botonEnviar{
+            width: 145px;
+            height: 30px;
+            font-size: 15px;
+        }
+    }
+}
+
+#containerPrincipal{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 50px;
+    .producto{
+        width: 300px;
+        height: auto;
+        margin: auto;
+        border: 2px solid;
+        border-color: gray;
+        .producto_item{
+            text-align: center;
+            display: grid;
+            grid-template-rows: 50px 50px 200px 50px;
+            align-items: center;
+            h2{
+                color: gray;
+            }
+            h3{
+                color: darkgray;
+            }
+            img{
+                margin: auto;
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}
+
